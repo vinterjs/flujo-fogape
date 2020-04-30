@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/santander-fonts.css">
+    <link rel="stylesheet" href="css/comprobante.css">
+    <link rel="stylesheet" href="icons/general/css/_icons.css">
+    <title>comprobante</title>
+</head>
+<body class="bg-std-grey">
+    <div class="comprobante-fogape">
+        <div class="step-box no-print">
+            <div class="cont-step">
+                <span>3</span>
+            </div>
+            <div class="text-step">
+                <p>Comprobante</p>
+            </div>
+            <div class="step-mark">
+                <span>Paso 3/3</span>
+            </div>
+        </div>
+        <span class="bar-step paso1 paso2 paso3 tres-pasos">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        
+        <div class="box detalle-credito">
+            <div class="silent">
+                <div class="comprobante-box">
+                    <div class="top-comprobante">
+                        <div class="comprobante-ico">
+                            <span class="com-ico color-success">
+                                <span class="srt srt-success"></span>
+                            </span>
+                        </div>
+                        <div class="comprobante-titulo">
+                            <p class="text-com">Tu postulación fue enviada con éxito</p>
+                        </div>
+                    </div>
+                    <span>Podrás consultar el estado de tu postulación en las próximas 48 hrs.</span>
+                </div>
+            </div>
+            <div class="separador-linea"></div>
+            <span>Valor total del Crédito</span>
+            <h2>$25.000.000</h2>
+            <div class="separador-linea"></div>
+            <ul>
+                <li>
+                    <div class="titulo-fo">Monto líquido solicitado:</div>
+                    <div class="desc-fo">$20.000.000</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Monto bruto</div>
+                    <div class="desc-fo">$30.100.040</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Tasa de interés mensual</div>
+                    <div class="desc-fo">Normal 1,5</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Tasa de interés anuel</div>
+                    <div class="desc-fo">Normal 13,00</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Carga Anual Equivalente</div>
+                    <div class="desc-fo">12.8%</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Desfase primera cuota</div>
+                    <div class="desc-fo">6 meses</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Costo total de crédito</div>
+                    <div class="desc-fo">$31.344.234</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Gasto notarial</div>
+                    <div class="desc-fo">$1.500</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Impuesto</div>
+                    <div class="desc-fo">$0</div>
+                </li>
+            </ul>
+            <div class="alert-box box--info">
+                <div class="alert-icon">
+                    <span class="conte-icon">
+                        <span class="srt srt-attention"></span>
+                    </span>
+                </div>
+                <div class="alert-content">
+                    <p class="text-alert">
+                        Todos los montos de esta simlación son referenciales a la fecha xx/xx/xxxxy están sujetos a aprobación de FOGAPE.
+                    </p>
+                </div>
+            </div>
+            <div class="modulo-seguro">
+                <ul>
+                    <li>
+                        <div>Seguro</div>
+                        <div>Prima Única</div>
+                        <div>Documento</div>
+                    </li>
+                    <!--ciclo seguros -->
+                    <li>
+                        <div><span class='srt srt-desgravament'></span> Desgravamen Capital fijo</div>
+                        <div>$511.000</div>
+                        <div><span class='srt srt-pdf'></span></div>
+                    </li>
+                    <!-- fin ciclos seguro -->
+                </ul>
+            </div>
+            <div class="separador-linea"></div>
+            <div class="btn-cont no-print">
+                <div>
+                    <button href="#modalmail" class="btn-std btn_plano_icono waves-effect waves-grey-2 js-modal"><span class="icon-left-side srt srt-email"></span>Enviar por E-mail</button>
+                </div>
+                <div>
+                    <button id="imprimir-voucher" class="btn-std btn_plano_icono waves-effect waves-grey-2"><span class="icon-left-side srt srt-print"></span>Imprimir simulación</button>
+                </div>
+            </div>
+        </div>
+        <p>Detalle de créditos a postergar</p>
+        <div class="box cred-con-der">
+            <ul>
+                <li class="titulos-li">
+                    <div class="t2">Tipo de crédito</div>
+                    <div class="t3">Nº de crédito</div>
+                    <div class="t4">Monto otorgado</div>
+                    <div class="t5"></div>
+                </li>
+                <li>
+                    <div class="t2">Crédito comercial</div>
+                    <div class="t3">8-888-888-888</div>
+                    <div class="t4">$15.345.455</div>
+                    <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                </li>
+                <li>
+                    <div class="t2">Crédito comercial</div>
+                    <div class="t3">7-777-777-777</div>
+                    <div class="t4">$17.234.794</div>
+                    <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                </li>
+            </ul>
+            <div class="alert-box box--info">
+                <div class="alert-icon">
+                    <span class="conte-icon">
+                        <span class="srt srt-attention"></span>
+                    </span>
+                </div>
+                <div class="alert-content">
+                    <p class="text-alert">
+                        Esta postergación se hará efectivamente solamente una vez
+    que usted contrate el crédito con Garantía Covid, lugo de ser
+    aprobado.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <p>Detalle de créditos sin derecho a postergación</p>
+        <div class="box cred-con-der">
+            <ul>
+                <li class="titulos-li">
+                    <div class="t2">Tipo de crédito</div>
+                    <div class="t3">Nº de crédito</div>
+                    <div class="t4">Monto otorgado</div>
+                    <div class="t5"></div>
+                </li>
+                <li>
+                    <div class="t2">Crédito comercial</div>
+                    <div class="t3">8-888-888-888</div>
+                    <div class="t4">$15.345.455</div>
+                    <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                </li>
+                <li>
+                    <div class="t2">Crédito comercial</div>
+                    <div class="t3">7-777-777-777</div>
+                    <div class="t4">$17.234.794</div>
+                    <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="box datos-contacto">
+            <p>Datos contacto</p>
+            <div class="separador-linea"></div>
+            <div class="contact-data">
+                <div><span>Email</span><span>correo@dominio.com</span></div>
+                <div><span>Teléfono</span><span>+56999999999</span></div>
+            </div>
+        </div>
+        <div class="btn-cont">
+            <button class="btn-std btn_secundario waves-effect waves-grey-2"> Salir</button>
+        </div>
+    </div>
+    <!-- modales -->
+    <!-- modal email -->
+    <div id="modalmail" class="modal">
+        <div class="box">
+            <div class="modal__head">
+                <p><span class="srt srt-email"></span>Ingresa e-mail de envío
+                </p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+            </a>
+          </div>
+          <div class="modal__body">
+            <div class="cont-mail-mod">
+                <div class="input-std">
+                    <input id="enviarCorreo" class="email" type="text" required="" autocomplete="off">
+                    <label>E-mail</label>
+                    <span class="linea-input"></span>
+                    <span class="msj-input-error">Ingrese un e-mail válido.</span>
+                </div>
+            </div>
+          </div>
+          <div class="modal__footer">
+            <button href="#modalsuccess" id="enviarEmail" class="btn-std btn_primario waves-effect waves-grey js-modal disabled">ENVIAR <span class="icon-right-side srt srt-arrow-right"></span></button>
+          </div>
+        </div>
+    </div>
+    <!-- modal success ingreso email -->
+    <div id="modalsuccess" class="modal">
+        <div class="box box-modal-email">
+            <div class="modal__head">
+                <p><span class="srt srt-success"></span>La acción se ha realizado con éxito</p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+                </a>
+            </div>
+            <div class="modal__body">
+                <p>Recibirás una copia del comprobante de esta operación en tu correo electrónico.</p>
+            </div>
+            <div class="modal__footer">
+                <a class="btn-std btn_primario waves-effect waves-grey js-modal">ACEPTAR</a>
+            </div>
+        </div>
+    </div>
+    <!-- modal detalle credito-->
+    <div id="modalinfocred" class="modal">
+        <div class="box box-modal-email">
+            <div class="modal__head">
+                <p><span class='srt srt-information'></span> Detalle de postergación de crédito</p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+                </a>
+            </div>
+            <div class="modal__body">
+                <ul class="detalle-cred">
+                    <li>
+                        <div>Numero de crédito</div>
+                        <div>33-333-333-333</div>
+                    </li>
+                    <li>
+                        <div>Fecha de otorgamiento</div>
+                        <div>12/11/2019</div>
+                    </li>
+                    <li>
+                        <div>Fecha de vencimiento</div>
+                        <div>12/11/2021</div>
+                    </li>
+                    <li>
+                        <div>Monto de deuda vigente</div>
+                        <div>$6.234.567</div>
+                    </li>
+                    <li>
+                        <div>Deudas pagadas</div>
+                        <div>3 de 30</div>
+                    </li>
+                    <li>
+                        <div>Monto cuota</div>
+                        <div>$200.000</div>
+                    </li>
+                </ul>
+                <div class="alert-box box--info">
+                    <div class="alert-icon">
+                        <span class="conte-icon">
+                            <span class="srt srt-attention"></span>
+                        </span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="text-alert">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a class="btn-std btn_primario waves-effect waves-grey js-modal">CERRAR</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/comprobante.js"></script>
+</body>
+</html>

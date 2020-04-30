@@ -1,0 +1,288 @@
+@import url("modules/base.css");
+@import url("modules/fonts.css");
+@import url("modules/buttons.css");
+@import url("modules/form.css");
+@import url("modules/messages.css");
+@import url("modules/condition.css");
+@import url("modules/modal.css");
+@import url("modules/voucher.css");
+@import url("modules/steps.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    box-sizing: border-box;
+    outline: none;
+    font-family:SantanderTextW05-Regular;
+}
+strong{
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;
+}
+.bg-std-grey{
+    background: #f0f0f0;
+}
+.separador-linea{
+    height: 1px !important;
+    background-color: #DDD;
+    margin: 0;
+    padding: 0;
+}
+.comprobante-fogape{
+    margin: 10px auto;
+    max-width: 850px;
+}
+.silent{
+    text-align: center;
+    padding: 10px 25px;
+}
+.silent .comprobante-box > span{
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box; 
+    margin: 0px;
+    text-align: center;
+    color: #444444;
+    padding-left: 30px;
+    font-family:SantanderTextW05-Regular;
+}
+.detalle-credito{
+    margin-top: 15px;
+}
+.detalle-credito > span{
+    display: block;
+    padding: 15px 15px 5px;
+    font-size: 12px;
+    line-height: 14px;
+    font-family:SantanderTextW05-Regular;
+    text-align: center;
+}
+.detalle-credito > h2{
+    padding: 5px 15px 15px;
+    font-family:SantanderTextW05-Bold;
+    font-size: 26px;
+    line-height: 24px;
+    text-align: center;
+}
+.detalle-credito > ul{
+    list-style: none;
+}
+.detalle-credito > ul > li{
+    display: inline-block;
+    vertical-align: top;
+    width: 24.6%;
+    padding: 15px;
+}
+.detalle-credito > ul > li > div{
+    font-size: 14px;
+    color: #444;
+    line-height: 16px;
+}
+.detalle-credito > ul > li > div:first-child{
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.modulo-seguro{
+    margin-bottom: 25px;
+}
+.modulo-seguro > ul{
+    list-style: none;
+    padding:15px;
+}
+.modulo-seguro > ul > li{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding:10px;
+}
+.modulo-seguro > ul > li > div{
+    color: #444;
+    text-align: left;
+    font-size: 14px;
+    display: inline-block;
+    width: 29%;
+    vertical-align: middle;
+}
+.modulo-seguro > ul > li:first-child > div{
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.modulo-seguro > ul > li > div > span.srt-desgravament{
+    font-size: 24px;
+    vertical-align: sub;
+    color: #1BB3BC;
+    margin-right: 5px;
+} 
+.modulo-seguro > ul > li > div > span.srt-pdf{
+    font-size: 24px;
+    vertical-align: sub;
+    color: #444;
+}
+.comprobante-fogape > p{
+    font-size: 16px;
+    font-family: SantanderTextW05-Bold;
+    font-weight: bold;
+    color: #444;
+    padding: 0 0 15px;
+}
+.cred-con-der > ul{
+    list-style: none;
+}
+.cred-con-der > ul > li > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.cred-con-der > ul > li{
+    border-bottom: 1px solid #ddd;
+}
+.cred-con-der > ul > li.titulos-li > div.t1{
+    width: 29%;
+    padding: 15px;
+    font-size: 14px;
+    font-family: SantanderTextW05-Bold;
+}
+.cred-con-der > ul > li.titulos-li > div.t2{
+    width: 30%;
+    padding: 15px;
+    font-size: 14px;
+    font-family: SantanderTextW05-Bold;
+}
+.cred-con-der > ul > li.titulos-li > div.t3{
+    width: 30%;
+    padding: 15px;
+    font-size: 14px;
+    font-family: SantanderTextW05-Bold;
+}
+.cred-con-der > ul > li.titulos-li > div.t4{
+    width: 30%;
+    padding: 15px;
+    font-size: 14px;
+    font-family: SantanderTextW05-Bold;
+}
+/*---------------------*/
+.cred-con-der > ul > li > div.t1{
+    width: 29%;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: SantanderTextW05-Bold;
+}
+.cred-con-der > ul > li > div.t1 > .select{
+    width: 60%;
+}
+.cred-con-der > ul > li > div.t2{
+    width: 30%;
+    padding: 15px;
+    font-size: 14px;
+    font-family:SantanderTextW05-Regular;
+}
+.cred-con-der > ul > li > div.t3{
+    width: 30%;
+    padding: 15px;
+    font-size: 14px;
+    font-family:SantanderTextW05-Regular;
+}
+.cred-con-der > ul > li > div.t4{
+    width: 30%;
+    padding: 15px;
+    font-size: 14px;
+    font-family:SantanderTextW05-Regular;
+}
+.cred-con-der > ul > li > div.t5 > a{
+    cursor: pointer;
+}
+.cred-con-der > ul > li > div.t5 span{
+    color:#1BB3BC;
+    font-size: 26px;
+}
+.detalle-cred{
+    list-style: none;
+}
+.detalle-cred > li{
+    display: inline-block;
+    vertical-align: top;
+    width: 32.7%;
+    padding: 10px;
+}
+.detalle-cred > li >div:first-child{
+    font-family: SantanderTextW05-Bold;
+    font-size: 14px;
+    color: #444;
+}
+.detalle-cred > li >div:last-child{
+    font-family:SantanderTextW05-Regular;
+    font-size: 14px;
+    color: #444;
+}
+.cred-con-der .alert-box{
+    margin: 0;
+}
+.btn-cont > div{
+    display: inline-block;
+    vertical-align: top;
+    width: 49.5%;
+    text-align: center;
+}
+.btn-cont > div:first-child{
+    border-right: 1px solid #DDD;
+}
+.btn-cont button{
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;
+}
+.datos-contacto > p{
+    font-size: 16px;
+    font-family: SantanderTextW05-Bold;
+    font-weight: bold;
+    color: #444;
+    padding: 15px;
+}
+.contact-data > div{
+    display: inline-block;
+    vertical-align: top;
+    width: 49.6%;
+    padding:15px;
+}
+.contact-data > div > span{
+    display: block;
+    font-family:SantanderTextW05-Regular;
+    font-size: 14px;
+    color: #444;
+}
+.btn-cont{
+    text-align: center;
+}
+@media (max-width:850px){
+    .comprobante-fogape{
+        margin: 10px;
+    }
+}
+@media (max-width:760px){
+    .cred-con-der > ul > li.titulos-li > div.t1{
+        width: 28%;
+    }
+    .cred-con-der > ul > li > div.t1{
+        width: 28%;
+    }
+    .cred-con-der > ul > li > div.t1 > .select{
+        width: 114%;
+    }
+    .btn-cont > div:first-child{
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    .btn-cont > div {
+        width: 100%;
+    }
+    .detalle-credito > ul > li{
+        width: 49.5%;
+    }
+    .cred-con-der > ul > li > div.t5{
+        padding: 15px;
+    }
+}
+}

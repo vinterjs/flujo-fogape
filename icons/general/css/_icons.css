@@ -1,0 +1,222 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons/icons.woff2') format('woff2'),
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype'),
+		url('../fonts/icons/icons.svg#icons') format('svg');
+}
+
+.srt:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.srt-arrow-down-1px:before {
+	content: "\E001";
+}
+
+.srt-arrow-down:before {
+	content: "\E002";
+}
+
+.srt-arrow-left-1px:before {
+	content: "\E003";
+}
+
+.srt-arrow-left:before {
+	content: "\E004";
+}
+
+.srt-arrow-right-1px:before {
+	content: "\E005";
+}
+
+.srt-arrow-right:before {
+	content: "\E006";
+}
+
+.srt-arrow-up-1px:before {
+	content: "\E007";
+}
+
+.srt-arrow-up:before {
+	content: "\E008";
+}
+
+.srt-attention:before {
+	content: "\E009";
+}
+
+.srt-bills:before {
+	content: "\E00A";
+}
+
+.srt-block:before {
+	content: "\E00B";
+}
+
+.srt-calendar:before {
+	content: "\E00C";
+}
+
+.srt-card:before {
+	content: "\E00D";
+}
+
+.srt-close:before {
+	content: "\E00E";
+}
+
+.srt-communication:before {
+	content: "\E00F";
+}
+
+.srt-consumer_credit:before {
+	content: "\E010";
+}
+
+.srt-desgravament:before {
+	content: "\E011";
+}
+
+.srt-discounts:before {
+	content: "\E012";
+}
+
+.srt-download:before {
+	content: "\E013";
+}
+
+.srt-edit:before {
+	content: "\E014";
+}
+
+.srt-email:before {
+	content: "\E015";
+}
+
+.srt-exchange:before {
+	content: "\E016";
+}
+
+.srt-family:before {
+	content: "\E017";
+}
+
+.srt-file:before {
+	content: "\E018";
+}
+
+.srt-gift:before {
+	content: "\E019";
+}
+
+.srt-help:before {
+	content: "\E01A";
+}
+
+.srt-information:before {
+	content: "\E01B";
+}
+
+.srt-insurance_car:before {
+	content: "\E01C";
+}
+
+.srt-insurance_cross:before {
+	content: "\E01D";
+}
+
+.srt-insurance_electrician:before {
+	content: "\E01E";
+}
+
+.srt-insurance_fraud:before {
+	content: "\E01F";
+}
+
+.srt-insurance_glassware:before {
+	content: "\E020";
+}
+
+.srt-insurance_heart:before {
+	content: "\E021";
+}
+
+.srt-insurance_home:before {
+	content: "\E022";
+}
+
+.srt-insurance_locksmith:before {
+	content: "\E023";
+}
+
+.srt-insurance_mobile:before {
+	content: "\E024";
+}
+
+.srt-insurance_plane:before {
+	content: "\E025";
+}
+
+.srt-insurance_plumbing:before {
+	content: "\E026";
+}
+
+.srt-isotype:before {
+	content: "\E027";
+}
+
+.srt-logo:before {
+	content: "\E028";
+}
+
+.srt-pdf:before {
+	content: "\E029";
+}
+
+.srt-phone:before {
+	content: "\E02A";
+}
+
+.srt-print:before {
+	content: "\E02B";
+}
+
+.srt-promotions:before {
+	content: "\E02C";
+}
+
+.srt-search:before {
+	content: "\E02D";
+}
+
+.srt-settings:before {
+	content: "\E02E";
+}
+
+.srt-success:before {
+	content: "\E02F";
+}
+
+.srt-trash:before {
+	content: "\E030";
+}
+
+.srt-unemployment:before {
+	content: "\E031";
+}
+
+.srt-user:before {
+	content: "\E032";
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/santander-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="icons/general/css/_icons.css">
+    <title>Credito FOGAPE</title>
+</head>
+<body class="bg-std-grey">
+    <!-- DEJAR MONTO MAXIMO EN EL VALOR DE ESTE INPUT -->
+    <!-- **** puede ser con puntos o solo digitos *** -->
+    <input id="monto-maximo-cred" type="hidden" value="200000000">
+    <!-- fin input monto maximo -->
+    <div class="contFo">
+        <div class="head-bg">
+            <h1>Comprometidos con las Pymes</h1>
+            <p>Crédito Covid-19.</p>
+        </div>
+        <div class="box ingresa-monto">
+            <p>Postula y solicita tu Crédito COVID-19 con garantía FOGAPE</p>
+            <div class="input-fogape">
+                <div class="input-std">
+                    <input id="montoCreditoFo" class="digDot" type="text" value="$">
+                    <span class="linea-input"></span>
+                    <span class="msj-input"></span>
+                    <span class="msj-input-error"></span>
+                </div>
+            </div>  
+        </div>
+        <div class="box configura-credito">
+            <p>Configura tu Crédito <span class="tooltip-str" tooltiptext="El número de cuotas tiene un plazo de entre 24 y 48 meses. Dicho plazo incluye 6 meses de gracia para el pago de la primera cuota."><span class='srt srt-information'></span></span></p>
+            <div class="separador-linea"></div>
+            <div class="input-conf">
+                <div class="display-input">
+                    <div class="select select--style numCuotas">
+                        <div class="select__input">
+                            <select name="name">
+                                <option value="null"></option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                            </select>
+                            <label>Número de cuotas</label>
+                            <div class="select__line"></div>
+                            <i class="down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-input">
+                    <div class="select select--style fechaVen">
+                        <div class="select__input">
+                            <select name="name">
+                                <option value="null"></option>
+                                <option value="01/04/2020">01/04/2020</option>
+                                <option value="02/04/2020">02/04/2020</option>
+                                <option value="03/04/2020">03/04/2020</option>
+                                <option value="04/04/2020">04/04/2020</option>
+                                <option value="05/04/2020">05/04/2020</option>
+                                <option value="06/04/2020">06/04/2020</option>
+                            </select>
+                            <label>Fecha de primer vencimiento</label>
+                            <div class="select__line"></div>
+                            <i class="down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="check-seguro">
+                <p class="cb-st">
+                    <label>
+                        <input type="checkbox" class="check-std">
+                        <span>Deseo contratar Seguro de Desgravamen Capital fijo. <span class="tooltip-str" tooltiptext="Pagará el saldo insoluto de la deuda al Banco Santander, ante fallecimiento del asegurado o por invalidez total y permanente 2/3 (hasta 65 años)."><span class='srt srt-information'></span></span>
+                    </label>
+                </p>
+            </div>
+            <div class="contextual-fogape">
+                <div class="alert-box box--info">
+                    <div class="alert-icon">
+                        <span class="conte-icon">
+                            <span class="srt srt-attention"></span>
+                        </span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="text-alert">
+                            Tendrás 6 meses de gracia para el cobro de la primera cuota de tu Crédito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-cont">
+            <button href="simulacion.html" id="simularFogape" class="btn-std btn_primario waves-effect waves-grey disabled"><strong>SIMULAR</strong> <span class="icon-right-side srt srt-arrow-right"></span></button>
+        </div>
+        <div class="condiciones">
+            <div class="box js-accordion js-accordion--active">
+                <div class="box__head js-accordion__trigger">
+                  <p>Condiciones generales</p>
+                  <span class='srt srt-arrow-up-1px'></span>
+                </div>
+                <div class="box__body">
+                  <p class="box__body--conditions">
+                    La aprobación y condiciones definidas del Crédito se encuentran condicionadas a la solicitud del cliente, al resultado de la evaluación comercial, conforme a las políticas del Banco, y a la aprobación que realice FOGAPE. Para obtenerlo, no es necesario tomar Seguros ni contratar otros servicios. Plazo mínimo del Crédito es de 24 meses incluidos los meses de gracia para el pago de la primera cuota en 6 meses, definidos en la contratación del mismo.
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

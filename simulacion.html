@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion</title>
+    <link rel="stylesheet" href="css/santander-fonts.css">
+    <link rel="stylesheet" href="css/simulacion.css">
+    <link rel="stylesheet" href="icons/general/css/_icons.css">
+</head>
+<body class="bg-std-grey">
+    <div class="simulacion-fogape">
+        <div class="step-box no-print">
+            <div class="cont-step">
+                <span>2</span>
+            </div>
+            <div class="text-step">
+                <p>Simulación y Créditos Vigentes</p>
+            </div>
+            <div class="step-mark">
+                <span>Paso 2/3</span>
+            </div>
+        </div>
+        <span class="bar-step paso1 paso2 tres-pasos">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <div class="box detalle-fogape">
+            <p>Detalle de <strong>Simulación</strong> de tu Crédito COVID-19</p>  
+            <span>Valor de cuota por 48 meses</span>  
+            <h2>$350.000</h2>
+            <div class="separador-linea"></div>
+            <ul>
+                <li>
+                    <div class="titulo-fo">Monto líquido solicitado:</div>
+                    <div class="desc-fo">$20.000.000</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Monto bruto</div>
+                    <div class="desc-fo">$30.100.040</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Tasa de interés mensual</div>
+                    <div class="desc-fo">Normal 1,5</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Tasa de interés anuel</div>
+                    <div class="desc-fo">Normal 13,00</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Carga Anual Equivalente (CAE)</div>
+                    <div class="desc-fo">12.8%</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Desfase primera cuota</div>
+                    <div class="desc-fo">6 meses</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Costo total de crédito</div>
+                    <div class="desc-fo">$31.344.234</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Gasto notarial</div>
+                    <div class="desc-fo">$1.500</div>
+                </li>
+                <li>
+                    <div class="titulo-fo">Impuesto</div>
+                    <div class="desc-fo">$0</div>
+                </li>
+            </ul>
+            <div class="alert-box box--info">
+                <div class="alert-icon">
+                    <span class="conte-icon">
+                        <span class="srt srt-attention"></span>
+                    </span>
+                </div>
+                <div class="alert-content">
+                    <p class="text-alert">
+                        Todos los montos de esta simulación son referenciales a la fecha xx/xx/xxxx y están sujetos a aprobación de FOGAPE. El costo total del crédito incluye: monto bruto, gastos notariales e impuestos
+                    </p>
+                </div>
+            </div>
+            <div class="modulo-seguro">
+                <ul>
+                    <li>
+                        <div>Seguro</div>
+                        <div>Prima Única</div>
+                        <div>Documento</div>
+                    </li>
+                    <!--ciclo seguros -->
+                    <li>
+                        <div><span class='srt srt-desgravament'></span> Desgravamen Capital fijo</div>
+                        <div>$511.000</div>
+                        <div><a href="#!"><span class='srt srt-pdf'></span></a></div>
+                    </li>
+                    <!-- fin ciclos seguro -->
+                </ul>
+            </div>
+            <div class="separador-linea"></div>
+            <div class="btn-cont no-print">
+                <div>
+                    <button href="#modalmail" class="btn-std btn_plano_icono waves-effect waves-grey-2 js-modal"><span class="icon-left-side srt srt-email"></span>Enviar por E-mail</button>
+                </div>
+                <div>
+                    <button id="imprimir-voucher" class="btn-std btn_plano_icono waves-effect waves-grey-2"><span class="icon-left-side srt srt-print"></span>Imprimir simulación</button>
+                </div>
+            </div>
+        </div>
+        <div class="second-step ">
+            <p>Detalle de créditos a postergar</p>
+            <div class="box cred-con-der">
+                <ul>
+                    <li class="titulos-li">
+                        <div class="t1">¿Deseas postergar estos créditos?</div>
+                        <div class="t2">Tipo de crédito</div>
+                        <div class="t3">Nº de crédito</div>
+                        <div class="t4">Monto otorgado</div>
+                        <div class="t5"></div>
+                    </li>
+                    <li>
+                        <div class="t1">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                  <select name="name">
+                                    <option value="null"></option>
+                                    <option value="si" selected="">Si</option>
+                                    <option value="no">no</option>
+                                  </select>
+                                  <label class="label--active">¿Postergar?</label>
+                                  <div class="select__line"></div>
+                                  <i class="down"></i>
+                                </div>
+                            <ul><li><a class="active select-value"></a></li><li><a class="select-value">Si</a></li><li><a class="select-value">no</a></li></ul></div>
+                        </div>
+                        <div class="t2">Crédito comercial</div>
+                        <div class="t3">8-888-888-888</div>
+                        <div class="t4">$15.345.455</div>
+                        <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                    </li>
+                    <li>
+                        <div class="t1">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                  <select name="name">
+                                    <option value="null"></option>
+                                    <option value="si" selected="">Si</option>
+                                    <option value="no">no</option>
+                                  </select>
+                                  <label class="label--active">¿Postergar?</label>
+                                  <div class="select__line"></div>
+                                  <i class="down"></i>
+                                </div>
+                            <ul><li><a class="active select-value"></a></li><li><a class="select-value">Si</a></li><li><a class="select-value">no</a></li></ul></div>
+                        </div>
+                        <div class="t2">Crédito comercial</div>
+                        <div class="t3">7-777-777-777</div>
+                        <div class="t4">$17.234.794</div>
+                        <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                    </li>
+                </ul>
+            </div>
+            <p>Detalle de créditos sin derecho a postergación</p>
+            <div class="box cred-con-der">
+                <div class="alert-box box--info">
+                    <div class="alert-icon">
+                        <span class="conte-icon">
+                            <span class="srt srt-attention"></span>
+                        </span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="text-alert">
+                            De acuerdo a la ley de crédito con Garantía COVID y el respectivo reglamento, los siguientes créditos que usted tiene vigentes con Banco Santander no corresponde sean prorrogados obligatoriamente en caso de otorgarse el crédito principal que usted está solicitando.
+                        </p>
+                    </div>
+                </div>
+                <ul>
+                    <li class="titulos-li">
+                        <div class="t2">Tipo de crédito</div>
+                        <div class="t3">Nº de crédito</div>
+                        <div class="t4">Monto otorgado</div>
+                        <div class="t5"></div>
+                    </li>
+                    <li>
+                        <div class="t2">Crédito comercial</div>
+                        <div class="t3">8-888-888-888</div>
+                        <div class="t4">$15.345.455</div>
+                        <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                    </li>
+                    <li>
+                        <div class="t2">Crédito comercial</div>
+                        <div class="t3">7-777-777-777</div>
+                        <div class="t4">$17.234.794</div>
+                        <div class="t5"><a class="js-modal" href="#modalinfocred"><span class="srt srt-attention"></span></a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box confirma-datos ">
+            <p>Confirma tus datos de contacto</p>
+            <div class="separador-linea"></div>
+            <div class="input-sim">
+                <div class="display-input">
+                    <div class="input-std">
+                        <input id="email-end" value="mail@mail.com" class="email input-wicon" type="text" required autocomplete="off">
+                        <label>E-mail</label>
+                        <span class="linea-input"></span>
+                        <span class="msj-input-error">Ingrese un e-mail válido.</span>
+                        <span class='srt srt-edit'></span>
+                    </div>
+                </div>
+                <div class="display-input">
+                    <div class="input-std">
+                        <input id="telefono-end" value="98765432" class="input-wicon soloNumeros telefono" type="text" required maxlength="9" autocomplete="off">
+                        <label>Teléfono</label>
+                        <span class="linea-input"></span>
+                        <span class="codz">+56</span>
+                        <span class="msj-input-error">Ingrese un teléfono válido.</span>
+                        <span class='srt srt-edit'></span>
+                    </div>
+                </div>
+                <div class="display-input select-fo">
+                    <div class="select select--style">
+                        <div class="select__input">
+                          <select name="name">
+                            <option value="null"></option>
+                            <option value="01" selected>Cta. Cte. 2-222-22-222</option>
+                            <option value="02">Cta. Cte. 3-333-33-333</option>
+                            <option value="03">Cta. Cte. 4-444-44-444</option>
+                          </select>
+                          <label class="label--active">Cuenta de abono</label>
+                          <div class="select__line"></div>
+                          <i class="down"></i>
+                        </div>
+                      </div>
+                </div>
+                <div class="display-input select-fo">
+                    <div class="select select--style">
+                        <div class="select__input">
+                          <select name="name">
+                            <option value="null"></option>
+                            <option value="01" selected>Cta. Cte. 2-222-22-222</option>
+                            <option value="02">Cta. Cte. 3-333-33-333</option>
+                            <option value="03">Cta. Cte. 4-444-44-444</option>
+                          </select>
+                          <label class="label--active">Cuenta de cargo</label>
+                          <div class="select__line"></div>
+                          <i class="down"></i>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <p class="cb-st">
+                <label>
+                    <input id="autorizoBanco" type="checkbox" class="check-std">
+                    <span>Autorizo al Banco Santander que las cuotas de mi Crédito COVID-19 sean cargados en cuenta corriente seleccionada de acuerdo a la fecha de vencimiento.</span>
+                </label>
+            </p>
+        </div>
+        <div class="declaracion-margenes ">
+            <p><span class='srt srt-file'></span> Declaración de márgenes</p>
+            <div class="box participacion-soc">
+                <div class="header-part">
+                    <p>Participación en sociedades</p>
+                    <p class="radio-std">
+                        <label>
+                            <input type="radio" name="sociedades" value="no">
+                            <span>No</span>
+                        </label>
+                    </p>
+                    <p class="radio-std">
+                        <label>
+                            <input type="radio" name="sociedades" checked value="si">
+                            <span>Si</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="separador-linea"></div>
+                <div class="formulario-replica active">
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                            <label>RUT Sociedad</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                            <label>Razón Social</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras capital" type="text" required autocomplete="off">
+                            <label>%Capital</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                            <label>%Utilidad</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="select select--style">
+                            <div class="select__input">
+                                <select name="name">
+                                    <option value="null"></option>
+                                    <option value="01" selected>01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                </select>
+                                <label class="label--active">Tipo de socio</label>
+                                <div class="select__line"></div>
+                                <i class="down"></i>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="ghost-form-one">
+                    <div class="formulario-replica hidden-block" form-code="1">
+                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="2">
+                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="3">
+                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="4">
+                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="5">
+                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-agregar">
+                    <button id="agregarSociedad" class="btn-std btn_plano_icono waves-effect waves-grey-2"><span>+</span>  Agregar sociedad</button>
+                </div>
+            </div>
+            <div class="box soy-aval-fiador">
+                <div class="header-part">
+                    <p>Soy Aval y/o fiador de un crédito</p>
+                    <p class="radio-std">
+                        <label>
+                            <input type="radio" name="avalfiador" value="no">
+                            <span>No</span>
+                        </label>
+                    </p>
+                    <p class="radio-std">
+                        <label>
+                            <input type="radio" name="avalfiador" checked value="si">
+                            <span>Si</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="separador-linea"></div>
+                <div class="formulario-replica active">
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                            <label>RUT Sociedad</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                            <label>Razón Social</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras capital" type="text" required autocomplete="off">
+                            <label>%Capital</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="input-std">
+                            <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                            <label>%Utilidad</label>
+                            <span class="linea-input"></span>
+                        </div>
+                    </div>
+                    <div class="input-rep">
+                        <div class="select select--style">
+                            <div class="select__input">
+                                <select name="name">
+                                    <option value="null"></option>
+                                    <option value="01" selected>01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                </select>
+                                <label class="label--active">Tipo de socio</label>
+                                <div class="select__line"></div>
+                                <i class="down"></i>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="ghost-form-two">
+                    <div class="formulario-replica hidden-block" form-code="1">
+                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="2">
+                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="3">
+                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="4">
+                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01" selected>01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="formulario-replica hidden-block" boolean-form="" form-code="5">
+                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
+                                <label>RUT Sociedad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
+                                <label>Razón Social</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras capital" type="text" required autocomplete="off">
+                                <label>%Capital</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="input-std">
+                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
+                                <label>%Utilidad</label>
+                                <span class="linea-input"></span>
+                            </div>
+                        </div>
+                        <div class="input-rep">
+                            <div class="select select--style">
+                                <div class="select__input">
+                                    <select name="name">
+                                        <option value="null"></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                    <label class="label--active">Tipo de socio</label>
+                                    <div class="select__line"></div>
+                                    <i class="down"></i>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-agregar">
+                    <button id="agregarSociedad2" class="btn-std btn_plano_icono waves-effect waves-grey-2"><span>+</span>  Agregar sociedad</button>
+                </div>
+            </div>
+        </div>
+        <div class="box red-box declaracion-covid no-print">
+            <a href="">
+                <p><span class="srt srt-file"></span> Declaración de uso de fondos Fogape COVID-19 <span class='srt srt-arrow-right'></span></p>
+            </a>
+            <div class="separador-linea"></div>
+            <p class="cb-st">
+                <label>
+                    <input id="decCovid" type="checkbox" class="check-std">
+                    <span>He leído todosos terminos y condiciones y declaro estar conforme.</span>
+                </label>
+            </p>
+        </div>
+        <div class="box red-box mandato-prorroga no-print">
+            <a href="">
+                <p><span class="srt srt-file"></span> Mandato de prórroga de Operaciones de Vigentes en Santander <span class='srt srt-arrow-right'></span></p>
+            </a>
+            <div class="separador-linea"></div>
+            <p class="cb-st">
+                <label>
+                    <input id="manProrr" type="checkbox" class="check-std">
+                    <span>He leído todosos terminos y condiciones y declaro estar conforme.</span>
+                </label>
+            </p>
+        </div>
+        <div class="box red-box mandato-suscribir no-print">
+            <a href="">
+                <p><span class="srt srt-file"></span> Mandato para suscribir y documentar deudo <span class='srt srt-arrow-right'></span></p>
+            </a>
+            <div class="separador-linea"></div>
+            <p class="cb-st">
+                <label>
+                    <input id="mandSusc" type="checkbox" class="check-std">
+                    <span>He leído todosos terminos y condiciones y declaro estar conforme.</span>
+                </label>
+            </p>
+        </div>
+        <div class="declaracion-salud">
+            <p>Declararión personal de salud</p>
+            <div class="box red-box mandato-suscribir no-print">
+                <a href="#modaldeclaracion" class="js-modal">
+                    <p><span class="srt srt-file"></span> Lee Declaración Personal de Salud <span class='srt srt-arrow-right'></span></p>
+                </a>
+            </div>
+        </div>
+        <div class="box preexistencias">
+            <div class="alert-box box--info">
+                <div class="alert-icon">
+                    <span class="conte-icon">
+                        <span class="srt srt-attention"></span>
+                    </span>
+                </div>
+                <div class="alert-content">
+                    <p class="text-alert">
+                        No tengo ninguna de estas preexistencias
+                    </p>
+                </div>
+            </div>
+            <p class="radio-std">
+                <label>
+                    <input type="radio" name="preexistencias" value="no">
+                    <span>No tengo ninguna preexistencias</span>
+                </label>
+            </p>
+            <p class="radio-std last-ch">
+                <label>
+                    <input id="preesi" type="radio" name="preexistencias" value="si">
+                    <span>Declaro tener alguna de estas preexistencia u otra</span>
+                </label>
+            </p>
+            <div class="declarar-preexistencia">
+                <div class="input-std-textarea">
+                    <textarea class="resize-textarea" name="" id="preexText" maxlength="200" required=""></textarea>
+                    <label>Comentario</label>
+                    <span class="linea-input"></span>
+                    <p class="contador-text"><span>0</span>/200</p>
+                </div>
+            </div>
+        </div>
+        <div class="box conocer-condiciones">
+            <p>Para conocer las condiciones del Seguros que vas a contratar</p>
+            <div class="separador-linea"></div>
+            <a href=""><span class="srt srt-file"></span> Formulario de incorporación de poliza</a>
+            <div class="separador-linea"></div>
+            <p class="cb-st">
+                <label>
+                    <input id="conCond" type="checkbox" class="check-std">
+                    <span>He leído los terminos y condiciones de contrato</span>
+                </label>
+            </p>
+        </div>
+        <div class="alert-box box--adv">
+            <div class="alert-icon">
+                <span class="conte-icon">
+                    <span class="srt srt-attention"></span>
+                </span>
+            </div>
+            <div class="alert-content">
+                <p class="text-alert">
+                    ESTA CONTRATACIÓN A DISTANCIA NO TIENE DERECHO A RETRACTO, POR LO QUE UNA VEZ FIRMADOS TODOS LOS DOCUMENTOS MEDIANTE LA AUTORIZACIÓN DECONTRATACIÓN CON TU CLAVE NO PODRÁS ARREPENTIRTE DE LA CONTRATACIÓN.
+                </p>
+            </div>
+        </div>
+        <div class="box confirmar  no-print">
+            <img src="img/clave.png" alt="">
+            <div class="end-btn no-print">
+                <button href="#" id="end-btn" class="btn-std btn_primario waves-effect waves-grey disabled">CONTRATAR <span class="icon-right-side srt srt-arrow-right"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modales -->
+    <!-- modal declaracion-->
+    <div id="modaldeclaracion" class="modal">
+        <div class="box">
+            <div class="modal__head">
+                <p><span class='srt srt-information'></span> Declaración personal de salud
+                </p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+            </a>
+          </div>
+          <div class="modal__body">
+            <p>Declaro estar en conocimiento acerca de que, en conformidad con la normativa legal vigente es mi deber
+                declarar sinceramente todas aquellas circunstancias relativas a mi estado pasado y actual de salud, de
+                acuerdo a lo solicitado por la Compañía en esta declaración de salud que puedan afectar el riesgo que
+                asumirán la o las compañías y que pueden constituir una restricción, limitación o exclusión de cobertura.
+                <br><br>
+                Declaro también que hasta esta fecha no me ha sido diagnosticada y que no tengo conocimiento de tener:
+                <br><br>
+                diabetes, enfermedades al riñón, enfermedades cardíacas, enfermedades de la piel, tumores benignos,
+                enfermedad de parkinson, patologías psiquiátricas, patologías de la columna y del sistema músculo
+                esquelético, alteraciones de los órganos de los sentidos, enfermedad neuromuscular, enfermedades
+                infecciosas, enfermedad del sistema óseo o traumatológicas, malformaciones congénitas, enfermedades
+                reumáticas, enfermedades oftalmológicas, algún grado de invalidez, algún desmembramiento, hipertensión
+                arterial, enfermedades coronarias o soplos cardíacos, arritmias, sobrepeso u obesidad, enfermedades del
+                pulmón, cáncer, hepatitis (excepto hepatitis a), enfermedades gastrointestinales como cirrosis hepática,
+                ulcera gástrica, colitis ulcerosa; enfermedades hematológicas como leucemia, linfoma o anemia (excepto por
+                falta de fierro); desórdenes nerviosos o mentales, VIH positivo/sida, síndrome de down y enfermedades
+                neurológicas como accidentes vasculares cerebrales, epilepsia y enfermedad de Alzheimer. En caso de
+                padecer o haber padecido alguna de las enfermedades señaladas precedentemente, u otra, declaro
+                sinceramente que he padecido:
+                <br><br>
+                Declaro asimismo que acepto y que estoy en conocimiento que en caso de que el siniestro se produzca por
+                algunas de las enfermedades o circunstancias indicadas más arriba y que fuesen preexistentes a esta fecha,
+                así como aquellas que especialmente he declarado, la compañía no estará obligada a indemnizar en los
+                términos de cada una de las pólizas a los que accede esta declaración.
+                <br><br>
+                Declaro que ninguno de los propuestos asegurados de esta solicitud ha sido rechazado por alguna compañía
+                aseguradora de vida durante los últimos 24 meses.
+                <br><br>
+                Finalmente, la presente declaración es expresión fiel de mi estado de salud y ha sido efectuada de manera
+                libre e informada. A través de la misma, la Compañía da cumplimiento a su obligación de preguntar respecto
+                a mi situación y estado de salud, de acuerdo a las disposiciones del Código de Comercio y en la Norma de
+                Carácter General N°349 de la Comisión para el Mercado Financiero. Acepto expresamente, mediante mi
+                firma de puño y letra o mediante huella digital o cualquier otro medio electrónico seguro, puesto o impreso
+                al pie de este documento, que todas y cada una de las situaciones o enfermedades declaradas por mí tienen
+                el carácter de preexistente y por ende están expresamente excluidas de cobertura por el presente seguro.</p>
+          </div>
+          <div class="modal__footer">
+            <button href="" id="cerrarDeclaracion" class="btn-std btn_primario waves-effect waves-grey js-modal">CERRAR</button>
+          </div>
+        </div>
+    </div>
+    <!--fin modal declaracion -->
+    <!-- modal email -->
+    <div id="modalmail" class="modal">
+        <div class="box">
+            <div class="modal__head">
+                <p><span class="srt srt-email"></span>Ingresa e-mail de envío
+                </p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+            </a>
+          </div>
+          <div class="modal__body">
+            <div class="cont-mail-mod">
+                <div class="input-std">
+                    <input id="enviarCorreo" class="email" type="text" required="" autocomplete="off">
+                    <label>E-mail</label>
+                    <span class="linea-input"></span>
+                    <span class="msj-input-error">Ingrese un e-mail válido.</span>
+                </div>
+            </div>
+          </div>
+          <div class="modal__footer">
+            <button href="#modalsuccess" id="enviarEmail" class="btn-std btn_primario waves-effect waves-grey js-modal disabled">ENVIAR <span class="icon-right-side srt srt-arrow-right"></span></button>
+          </div>
+        </div>
+    </div>
+    <!-- modal success ingreso email -->
+    <div id="modalsuccess" class="modal">
+        <div class="box box-modal-email">
+            <div class="modal__head">
+                <p><span class="srt srt-success"></span>La acción se ha realizado con éxito</p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+                </a>
+            </div>
+            <div class="modal__body">
+                <p>Recibirás una copia del comprobante de esta operación en tu correo electrónico.</p>
+            </div>
+            <div class="modal__footer">
+                <a class="btn-std btn_primario waves-effect waves-grey js-modal">ACEPTAR</a>
+            </div>
+        </div>
+    </div>
+    <!-- modal detalle credito-->
+    <div id="modalinfocred" class="modal">
+        <div class="box box-modal-email">
+            <div class="modal__head">
+                <p><span class='srt srt-information'></span> Detalle de postergación de crédito</p>
+                <a href="#" class="modal__btn">
+                    <span class="srt srt-close"></span>
+                </a>
+            </div>
+            <div class="modal__body">
+                <ul class="detalle-cred">
+                    <li>
+                        <div>Numero de crédito</div>
+                        <div>33-333-333-333</div>
+                    </li>
+                    <li>
+                        <div>Fecha de otorgamiento</div>
+                        <div>12/11/2019</div>
+                    </li>
+                    <li>
+                        <div>Fecha de vencimiento</div>
+                        <div>12/11/2021</div>
+                    </li>
+                    <li>
+                        <div>Monto de deuda vigente</div>
+                        <div>$6.234.567</div>
+                    </li>
+                    <li>
+                        <div>Deudas pagadas</div>
+                        <div>3 de 30</div>
+                    </li>
+                    <li>
+                        <div>Monto cuota</div>
+                        <div>$200.000</div>
+                    </li>
+                </ul>
+                <div class="alert-box box--info">
+                    <div class="alert-icon">
+                        <span class="conte-icon">
+                            <span class="srt srt-attention"></span>
+                        </span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="text-alert">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a class="btn-std btn_primario waves-effect waves-grey js-modal">CERRAR</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/simulacion.js"></script>
+</body>
+</html>

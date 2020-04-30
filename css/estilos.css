@@ -1,0 +1,230 @@
+@import url("modules/base.css");
+@import url("modules/fonts.css");
+@import url("modules/buttons.css");
+@import url("modules/form.css");
+@import url("modules/messages.css");
+@import url("modules/condition.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    box-sizing: border-box;
+    outline: none;
+    font-family:SantanderTextW05-Regular;
+}
+strong{
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;
+}
+.bg-std-grey{
+    background: #f0f0f0;
+}
+.separador-linea{
+    height: 1px !important;
+    background-color: #DDD;
+    margin: 0;
+    padding: 0;
+}
+/*++++++++++++PROVISORIO++++++++++++++*/
+span.str-minimise{
+    font-size: 21px;
+}
+
+.contFo{
+    margin: 10px auto;
+    max-width: 850px;
+}
+.contFo > .head-bg{
+    background-image: url("../img/fogape.jpg");
+    background-position: 0px -66px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 126px;
+    position: relative;
+}
+.contFo > .head-bg::after{
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 42%, rgba(0,0,0,0) 100%);
+    height: -webkit-fill-available;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.head-bg > h1{
+    max-width: 690px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 26px;
+    font-family:SantanderHeadlineW05-Bold;
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+}
+.head-bg > p{
+    max-width: 690px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 34px;
+    color: white;
+    text-transform: uppercase;
+    font-family:SantanderTextW05-Regular;
+    z-index: 2;
+    position: relative;
+}
+.ingresa-monto{
+    max-width: 690px;
+    margin: 0 auto;
+    margin-top: -55px;
+    padding: 10px 0 20px;
+    z-index: 2;
+    position: relative;
+}
+.ingresa-monto > p{
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;   
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #444444;
+    padding: 15px;
+}
+.input-fogape{
+    max-width: 370px;
+    margin: 15px auto;
+}
+.input-fogape input{
+    text-align: center;
+    font-size: 32px;
+    font-family: SantanderMicroTextW01-Bold;
+    font-weight: bold;
+    color: #767676;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+.input-fogape .msj-input{
+    font-size: 12px;
+    line-height: 14px;
+    bottom: -10px;
+    left: 5px;
+}
+.configura-credito{
+    max-width: 690px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.configura-credito > p{
+    padding: 15px;
+    font-size: 16px;
+    color: #444444;
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;   
+}
+.input-conf{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.input-conf > .display-input{
+    padding: 15px;
+    display: inline-block;
+    width: 49.6%;
+    vertical-align: top;
+}
+.contextual-fogape{
+    padding: 0px 15px 15px;
+}
+.btn-cont{
+    padding: 15px;
+    text-align: center;
+}
+.condiciones{
+    padding: 0 10px;
+}
+.tooltip-str{
+    display: inline;
+    position: relative;
+}
+.tooltip-str > span{
+    font-size: 18px;
+    vertical-align: bottom;
+    color: #1BB3BC;
+}
+.tooltip-str:hover:after{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+    font-family:SantanderMicroTextW01-Rg;
+    color: #444;
+    content: "";
+    content: attr(tooltiptext);
+    margin: 0 auto 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 13px;
+    width: 220px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 20;
+    bottom: 42px;
+    left: -18px;
+}
+.tooltip-str:hover:before{
+    border: solid;
+    border-color: #fff transparent;
+    border-width: 12px 10px 0 10px;
+    content: "";
+    left: 5%;
+    bottom: 30px;
+    position: absolute;
+    z-index:900;
+    
+}
+/*NO PRINT*/
+@media print{
+    .no-print{
+        display: none;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px){
+    .contFo {
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 740px){
+    .contFo > .head-bg{
+        padding: 80px 15px 126px;
+        background-position: 0px -20px;
+    }
+    .ingresa-monto{
+        margin: 0px 10px;
+        margin-top: -55px;
+    }
+    .configura-credito{
+        margin: 0 10px;
+        margin-top: 15px;
+    }
+    .input-fogape{
+        padding: 0 10px;
+    }
+    .input-fogape .input-std > .msj-input{
+        top: 54px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 475px){
+    .input-conf > .display-input{
+        width: 100%;
+    }
+}
