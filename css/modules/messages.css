@@ -1,0 +1,87 @@
+
+/*mensajes contextuales*/
+.alert-box{
+  display: table;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.alert-box .alert-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -14px;
+}
+.alert-box .alert-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  padding: 0px 0px 0px 25px;
+}
+.alert-icon .conte-icon {
+  background-size: 15% auto;
+  text-indent: inherit;
+  font-size: 28px;
+  padding: 0px;
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 24px;
+  color: #fff;
+  line-height: 22px;
+  overflow: hidden;
+}
+.alert-content .text-alert {
+  display: block;
+  color: #444;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 8px auto;
+  padding: 0 20px 0 20px;
+  /*font-family:SantanderTextW05-Regular;*/
+  font-family:SantanderMicroTextW01-Rg;
+}
+
+.box--info{
+  background-color: #DDF4F5;
+}
+.box--info [class^="str-"],
+.box--info [class*=" str-"],
+.box--info [class*="srt-"],
+.box--info [class*=" str-"]
+{
+  color: #1BB3BC;
+}
+.box--positivo{
+  background-color: #F2F6DC;
+}
+.box--positivo [class^="str-"],
+.box--positivo [class*=" str-"],
+.box--positivo [class^="srt-"],
+.box--positivo [class*=" srt-"]{
+  color: #ADC111;
+}
+.box--adv{
+  background-color: #F8F0DF;
+}
+.box--adv [class^="str-"],
+.box--adv [class*=" str-"],
+.box--adv [class^="srt-"],
+.box--adv [class*=" srt-"]{
+  color: #E59D27;
+}
+.box--block{
+  background-color: #FBD0D0;
+}
+.box--block [class^="str-"],
+.box--block [class*=" str-"],
+.box--block [class^="srt-"],
+.box--block [class*=" srt-"]{
+  color: #EC0000;
+}
+/*fin mensajes contextuales*/

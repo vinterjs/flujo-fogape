@@ -1,0 +1,125 @@
+
+/*StepBox*/
+.step-box{
+  display: table;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0;
+  background-color: white;
+  margin: 10px 1px 0 1px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+.step-box .cont-step{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -12px;
+}
+.step-box .step-mark{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -12px;
+}
+.step-mark span{
+  font-family:SantanderTextW05-Regular;
+  font-size: 14px;
+  color: #767676;
+  text-transform: uppercase;
+}
+.cont-step span{
+  display: inline-block;
+  font-family:SantanderTextW05-Bold;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1BB3BC;
+  border: 2px solid #1BB3BC;
+  background: white;
+  text-align: center;
+  margin-right: 15px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.step-box .text-step{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  padding: 0px 65px 0px 30px;
+}
+.text-step p{
+  display: block;
+  color: #444;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 8px auto;
+  padding: 0 20px 0 15px;
+  text-transform: uppercase;
+  font-family:SantanderTextW05-Bold;
+}
+.bar-step{
+  height: 4px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.bar-step > i{
+  background: #ccc;
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+}
+.bar-step > i:first-child{
+  border-bottom-left-radius: 10px;
+}
+.bar-step > i:last-child{
+  border-bottom-right-radius: 10px;
+}
+.bar-step.dos-pasos > i{
+  width: 49.5%;
+}
+.bar-step.tres-pasos > i{
+  width: 33%;
+}
+.bar-step.cuatro-pasos > i{
+  width: 24.5%;
+}
+.bar-step.paso1 > i:nth-child(1),
+.bar-step.paso2 > i:nth-child(1),
+.bar-step.paso2 > i:nth-child(2),
+.bar-step.paso3 > i:nth-child(1),
+.bar-step.paso3 > i:nth-child(2),
+.bar-step.paso3 > i:nth-child(3),
+.bar-step.paso4 > i:nth-child(1),
+.bar-step.paso4 > i:nth-child(2),
+.bar-step.paso4 > i:nth-child(3),
+.bar-step.paso4 > i:nth-child(4)
+{
+  background: #1BB3BC;
+}
+@media(max-width:768px){
+  .bar-step.tres-pasos > i{
+      border-radius: 0;
+  }
+  .bar-step.tres-pasos > i {
+      width: 33.5%;
+      border-radius: 0;
+  }
+  .bar-step.dos-pasos > i {
+      width: 50%;
+      border-radius: 0;
+  }
+  .bar-step.cuatro-pasos > i{
+      width: 25%;
+      border-radius: 0;
+  }
+}
+/*fin StepBox*/
