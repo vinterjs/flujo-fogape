@@ -1,0 +1,97 @@
+
+/*comprobantes*/
+.comprobante-box{
+  max-width: 680px;
+  margin: 0 auto 20px;
+}
+.comprobante-box .top-comprobante{
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0px;
+  text-align: center;
+}
+.top-comprobante .comprobante-ico{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin-top: -20px;
+}
+.comprobante-ico .com-ico{
+  text-indent: inherit;
+  font-size: 44px;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1px;
+  overflow: hidden;
+}
+.top-comprobante .comprobante-titulo{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  padding: 0 0 0 35px;
+}
+.comprobante-titulo .text-com{
+  display: block;
+  color: #444;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 8px auto;
+  padding: 0 20px 0 20px;
+  font-family:SantanderTextW05-Bold;
+  font-weight: bold;
+}
+.comprobante-box .texto-comprobante{
+  font-size: 16px;
+  line-height: 23px;
+  font-family:SantanderTextW05-Regular;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+}
+.color-success{
+  color: #63BA68;
+}
+.color-info{
+  color: #1BB3BC;
+}
+.color-warning{
+  color: #E59D27;
+}
+.color-block{
+  color: #EC0000;
+}
+.lat-padd-15{
+  padding: 15px 15px 0;
+}
+.btn-comprobantes .btn-box{
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  text-align: center;
+}
+.btn-comprobantes .btn-box:first-child{
+  border-right: 1px solid #ddd;
+}
+@media (max-width:450px){
+  .top-comprobante .comprobante-ico{
+      left: 15px;
+  }
+  .top-comprobante .comprobante-titulo{
+      padding: 0 0 0 40px;
+  }
+  .btn-comprobantes .btn-box{
+    width: 100%;
+  }
+  .btn-comprobantes .btn-box:first-child{
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
+/*fin comprobantes*/
