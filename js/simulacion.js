@@ -260,7 +260,7 @@ $("#enviarCorreo").focusout(function(){
     }
 });
 //boton disabled
-$(".btn-std").click(function(e) {
+$(".btn-std").click(function() {
     if ($(this).hasClass("disabled")) {
         return false;
     }
@@ -276,109 +276,113 @@ $("#goFoward").click(function(){
 });
 //SELECT
 if ($(".select--style").length) {
-    $(".select--style").each(function() {
-      styledSelect($(this));
-    });
+  $(".select--style").each(function() {
+    styledSelect($(this));
+  });
 
-    $(".select--style").on("click", ".select__input", function() {
-      var self = $(this);
-      $(".select--style")
-        .find("ul:first")
-        .stop()
-        .slideUp(1);
-      self
-        .parent()
-        .find("ul:first")
-        .stop()
-        .slideToggle();
-      self.children(".select__line").toggleClass("line--active");
-    });
-    $(".select--style").on("click", ".select-value", function() {
-      var self = $(this);
-      var index = self.parent().index();
-      var parent = self.parents(".select--style");
-      parent.find(".select-value").removeClass("active");
-      parent
-        .find("ul:first")
-        .stop()
-        .slideUp();
-      parent.find("select:first")[0].selectedIndex = index;
-      self.addClass("active");
+  $(".select--style").on("click", ".select__input", function() {
+    var self = $(this);
+    $(".select--style")
+      .find("ul:first")
+      .stop()
+      .slideUp(1);
+    self
+      .parent()
+      .find("ul:first")
+      .stop()
+      .slideToggle();
+    self.children(".select__line").toggleClass("line--active");
+  });
+  $(".select--style").on("click", ".select-value", function() {
+    var self = $(this);
+    var index = self.parent().index();
+    var parent = self.parents(".select--style");
+    parent.find(".select-value").removeClass("active");
+    parent
+      .find("ul:first")
+      .stop()
+      .slideUp();
+    parent.find("select:first")[0].selectedIndex = index;
+    self.addClass("active");
+    self
+      .parent()
+      .parent()
+      .parent()
+      .children(".select__input")
+      .children(".select__line")
+      .removeClass("line--active");
+    if (self.text() === "") {
       self
         .parent()
         .parent()
         .parent()
         .children(".select__input")
-        .children(".select__line")
-        .removeClass("line--active");
-      if (self.text() === "") {
-        self
-          .parent()
-          .parent()
-          .parent()
-          .children(".select__input")
-          .children("label")
-          .removeClass("label--active");
-      } else {
-        self
-          .parent()
-          .parent()
-          .parent()
-          .children(".select__input")
-          .children("label")
-          .addClass("label--active");
-      }
-    });
-    $(".select__input select").change(function() {
-      //console.log("change");
-      if ($(this).val() !== "null") {
-        $(this)
-          .next("label")
-          .addClass("label--active");
-      } else {
-        $(this)
-          .next("label")
-          .removeClass("label--active");
-        $(this).focusout();
-      }
-    });
-    $(".select--style li").click(function() {
-      $(this)
+        .children("label")
+        .removeClass("label--active");
+    } else {
+      self
         .parent()
         .parent()
-        .find("select")
-        .trigger("change");
-    });
-  }
-  // FunciÃ³n que genera el Select con Estilos.
-// Ahora se usa esta funciÃ³n para la carga inicial
-function styledSelect(el) {
-    var self = el;
-    var selector = self.find("select");
-    var list = document.createElement("ul");
-    var firstElement = 1;
-    var oldList = self.find("ul:first");
-    if (oldList.length > 0) {
-      oldList.remove();
+        .parent()
+        .children(".select__input")
+        .children("label")
+        .addClass("label--active");
     }
-  
-    selector.find("option").each(function() {
-      var optionLabel = $(this).text();
-      var listItem = document.createElement("li");
-      var listLink = document.createElement("a");
-      var listLinkText = document.createTextNode(optionLabel);
-      if (firstElement) {
-        --firstElement;
-        listLink.classList.add("active");
-      }
-      listLink.classList.add("select-value");
-      listLink.appendChild(listLinkText);
-      listItem.appendChild(listLink);
-      list.appendChild(listItem);
-    });
-  
-    self.append(list);
+  });
+  $(".select__input select").change(function() {
+    //console.log("change");
+    if ($(this).val() !== "null") {
+      $(this)
+        .next("label")
+        .addClass("label--active");
+    } else {
+      $(this)
+        .next("label")
+        .removeClass("label--active");
+      $(this).focusout();
+    }
+  });
+  $(".select--style li").click(function() {
+    $(this)
+      .parent()
+      .parent()
+      .find("select")
+      .trigger("change");
+  });
+}
+
+// Función que genera el Select con Estilos.
+// Ahora se usa esta función para la carga inicial
+function styledSelect(el) {
+var self = el;
+var newListString = "<ul>";
+var oldListString = self.html();
+var selector = self.find("select");
+var firstElement = 1;
+var oldList = self.find("ul:first");
+if (oldList.length > 0) {
+  //console.log("erased!");
+  //console.log(oldList);
+  oldList.remove();
+}
+
+selector.find("option").each(function() {
+  var optionLabel = $(this).text();
+  if (firstElement) {
+    --firstElement;
+    newListString += "<li><a class='select-value active'>";
   }
+  else{
+    newListString += "<li><a class='select-value'>";
+  }
+  newListString += optionLabel;
+  newListString += "</a></li>";
+});
+
+newListString += "</ul>";
+self.html(oldListString + newListString);
+}
+// Fin función
     //validacion telefono
   $(".input-std input.telefono").focusout(function() {
     if ($(this).val()) {
@@ -395,25 +399,6 @@ function styledSelect(el) {
       $(this).removeClass("invalid valid");
     }
   });
-
-$("#email-end, #telefono-end").focusout(function(){
-    confirma();
-});
-function confirma(){
-    if( $("#email-end").hasClass("valid") && $("#telefono-end").hasClass("valid") ){
-        $("#end-btn").removeClass("disabled");
-    }else{
-        $("#end-btn").addClass("disabled");
-    }
-}
-//btn end
-$("#end-btn").click(function(){
-    if($(this).hasClass("disabled")){
-        return false;
-    }else{
-        window.location.href = "comprobante.html";
-    }
-})
 //btn print
 if(document.getElementById("imprimir-voucher")){
     document.getElementById("imprimir-voucher").addEventListener("click", function(){
@@ -442,54 +427,14 @@ if(document.getElementById("imprimir-voucher")){
 
 //preexistencias
 $("input[name='preexistencias']").click(function(){
+  $(".preexistencias").find(".error-span").css("display","none");
   if( $("#preesi").is(':checked') ){
     $(".declarar-preexistencia").slideDown();
   }else{
     $(".declarar-preexistencia").slideUp();
   }
 });
-//agregar form sociedad
-var contador = 0;
-var contador_dos = 0;
-                      
-$(".participacion-soc #agregarSociedad").click(function(){
-  if(contador < 5){
-    contador++;
-    console.log(contador);
-    $(".ghost-form-one > .formulario-replica[form-code='"+contador+"']").slideDown();
-    $(".ghost-form-one > .formulario-replica[form-code='"+contador+"']").addClass("active");
-  }
-});
-$(".soy-aval-fiador #agregarSociedad2").click(function(){
-  if(contador_dos < 5){
-    contador_dos++;
-    $(".ghost-form-two > .formulario-replica[form-code='"+contador_dos+"']").slideDown();
-    $(".ghost-form-two > .formulario-replica[form-code='"+contador_dos+"']").addClass("active");
-  }
-});
-$(".del-soc").click(function(){
-  contador--;
-  $(this).parent().removeClass("active");
-});
-$(".erase-form").click(function(){
-  $(this).parent().slideUp();
-});
 
-
-$("input[name='sociedades']").click(function(){
- if($(this).val() == "no"){
-   $(this).parent().parent().parent().parent().find(".formulario-replica, .ghost-form-one, .btn-agregar").slideUp();
- }else{
-  $(this).parent().parent().parent().parent().find(".formulario-replica, .btn-agregar").slideDown();
- }
-});
-$("input[name='avalfiador']").click(function(){
-  if($(this).val() == "no"){
-    $(this).parent().parent().parent().parent().find(".formulario-replica, .ghost-form-two, .btn-agregar").slideUp();
-  }else{
-   $(this).parent().parent().parent().parent().find(".formulario-replica, .btn-agregar").slideDown();
-  }
- });
 //validacion form
 var aut_banco = false;
 var dec_covid = false;
@@ -498,12 +443,23 @@ var mand_susc = false;
 var preex = false;
 var preex_text = false;
 var con_cond = false
-//var sociedad = false;
-var form_rep = false;
+var confir = true;
+
+$("#telefono-end, #email-end").focusout(function(){
+  var fono = $("#telefono-end");
+  var mail = $("#email-end");
+  if(fono.hasClass("valid") && mail.hasClass("valid")){
+    confir = true;
+  }else{
+    confir = false;
+  }
+  validar();
+});
 
 $("#autorizoBanco").click(function(){
   if($(this).is(':checked')){
     aut_banco = true;
+    $("#autorizoBanco").parent().find(".error-span").css("display","none");
   }else{
     aut_banco = false;
   }
@@ -512,6 +468,7 @@ $("#autorizoBanco").click(function(){
 $("#decCovid").click(function(){
   if($(this).is(':checked')){
     dec_covid = true;
+    $("#decCovid").parent().find(".error-span").css("display","none");
   }else{
     dec_covid = false;
   }
@@ -520,6 +477,7 @@ $("#decCovid").click(function(){
 $("#manProrr").click(function(){
   if($(this).is(':checked')){
     man_prorr = true;
+    $("#manProrr").parent().find(".error-span").css("display","none");
   }else{
     man_prorr = false;
   }
@@ -528,6 +486,7 @@ $("#manProrr").click(function(){
 $("#mandSusc").click(function(){
   if($(this).is(':checked')){
     mand_susc = true;
+    $("#mandSusc").parent().find(".error-span").css("display","none");
   }else{
     mand_susc = false;
   }
@@ -549,6 +508,7 @@ $("#preexText").focusout(function(){
   if($(this).val()){
     preex_text = true;
     preex = true;
+    $(".preexistencias").find(".error-span").css("display","none");
    }else{
      preex_text = false;
      preex = false;
@@ -558,67 +518,14 @@ $("#preexText").focusout(function(){
 $("#conCond").click(function(){
   if($(this).is(':checked')){
     con_cond = true;
+    $("#conCond").parent().find(".error-span").css("display","none");
   }else{
     con_cond = false;
   }
   validar();
 });
-$(".formulario-replica.active input").focusout(function(){
- formRep();
-});
-$(".formulario-replica.active select").change(function(){
-  formRep();
- });
-
-function formRep(){
-  var i1 = false;
-  var i2 = false;
-  var i3 = false;
-  var i4 = false;
-  //var i5 = false;
-  $(".formulario-replica.active").each(function(){
-    var rs = $(this).find(".rut-sociedad");
-    var rz = $(this).find(".razon-social");
-    var cp = $(this).find(".capital");
-    var ut = $(this).find(".utilidad");
-    //var sl = $(this).find("select");
-    if( rs.val() ){
-      i1 = true;
-    }else{
-      i1 = false;
-    }
-    if( rz.val() ){
-      i2 = true;
-    }else{
-      i2 = false;
-    }
-    if( cp.val() ){
-      i3 = true;
-    }else{
-      i3 = false;
-    }
-    if( ut.val() ){
-      i4 = true;
-    }else{
-      i4 = false;
-    }
-    /*if(!sl.val() == "null"){
-      i5 = true;
-    }else{
-      i5 = false;
-    }*/
-  });
-  if(i1 && i2 && i3 && i4){
-    form_rep = true;
-  }else{
-    form_rep = false;
-  }
-  validar();
-}
-
-
 function validar(){
-  if(aut_banco && dec_covid && man_prorr && mand_susc && preex && con_cond && form_rep){
+  if(aut_banco && dec_covid && man_prorr && mand_susc && preex && con_cond && confir){
     console.log("validado");
     $("#end-btn").removeClass("disabled");
   }else{
@@ -628,8 +535,69 @@ function validar(){
 }
 $("#end-btn").click(function(){
   if($(this).hasClass("disabled")){
+    estados();
     return false;
   }else{
     console.log("ir a comprobante");
+    //window.location.href = "comprobante.html";
   }
-})
+});
+function estados(){
+  if( !aut_banco ){
+    $("#autorizoBanco").parent().find(".error-span").css("display","block");
+    $('html, body').animate({scrollTop: $("#autorizoBanco").offset().top}, 1000);
+  }else{
+    $("#autorizoBanco").parent().find(".error-span").css("display","none");
+  }
+
+  if(!dec_covid){
+    $("#decCovid").parent().find(".error-span").css("display","block");
+    $('html, body').animate({scrollTop: $("#decCovid").offset().top}, 1000);
+  }else{
+    $("#decCovid").parent().find(".error-span").css("display","none");
+  }
+
+  if(!man_prorr){
+    $("#manProrr").parent().find(".error-span").css("display","block");
+    $('html, body').animate({scrollTop: $("#manProrr").offset().top}, 1000);
+  }else{
+    $("#manProrr").parent().find(".error-span").css("display","none");
+  }
+
+  if(!mand_susc){
+    $("#mandSusc").parent().find(".error-span").css("display","block");
+    $('html, body').animate({scrollTop: $("#mandSusc").offset().top}, 1000);
+  }else{
+    $("#mandSusc").parent().find(".error-span").css("display","none");
+  }
+
+  if(!preex){
+    $(".preexistencias").find(".error-span").css("display","block");
+    $('html, body').animate({scrollTop: $(".preexistencias").offset().top}, 1000);
+  }else{
+    $(".preexistencias").find(".error-span").css("display","none");
+  }
+
+  if(!preex && !preex_text){
+    $(".preexistencias").find(".error-span").css("display","block");
+    $('html, body').animate({scrollTop: $("#preexText").offset().top}, 1000);
+  }else{
+    $(".preexistencias").find(".error-span").css("display","none");
+  }
+
+  if(!con_cond){
+    $("#conCond").parent().find(".error-span").css("display","block");
+  }else{
+    $("#conCond").parent().find(".error-span").css("display","none");
+  }
+
+  if( !$("#email-end").hasClass("invalid valid") ){
+    $("#email-end").addClass("invalid");
+    $('html, body').animate({scrollTop: $("#email-end").offset().top}, 1000);
+  }
+
+  if( !$("#telefono-end").hasClass("invalid valid") ){
+    $("#telefono-end").addClass("invalid");
+    $('html, body').animate({scrollTop: $("#telefono-end").offset().top}, 1000);
+  }
+}

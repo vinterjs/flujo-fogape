@@ -202,7 +202,7 @@
             <div class="input-sim">
                 <div class="display-input">
                     <div class="input-std">
-                        <input id="email-end" value="mail@mail.com" class="email input-wicon" type="text" required autocomplete="off">
+                        <input id="email-end" value="mail@mail.com" class="email input-wicon valid" type="text" required autocomplete="off">
                         <label>E-mail</label>
                         <span class="linea-input"></span>
                         <span class="msj-input-error">Ingrese un e-mail válido.</span>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="display-input">
                     <div class="input-std">
-                        <input id="telefono-end" value="98765432" class="input-wicon soloNumeros telefono" type="text" required maxlength="9" autocomplete="off">
+                        <input id="telefono-end" value="98765432" class="input-wicon soloNumeros telefono valid" type="text" required maxlength="9" autocomplete="off">
                         <label>Teléfono</label>
                         <span class="linea-input"></span>
                         <span class="codz">+56</span>
@@ -254,643 +254,12 @@
                 <label>
                     <input id="autorizoBanco" type="checkbox" class="check-std">
                     <span>Autorizo al Banco Santander que las cuotas de mi Crédito COVID-19 sean cargados en cuenta corriente seleccionada de acuerdo a la fecha de vencimiento.</span>
+                    <span class="error-span">Este campo es obligatorio</span>
                 </label>
             </p>
         </div>
         <div class="declaracion-margenes ">
             <p><span class='srt srt-file'></span> Declaración de márgenes</p>
-            <div class="box participacion-soc">
-                <div class="header-part">
-                    <p>Participación en sociedades</p>
-                    <p class="radio-std">
-                        <label>
-                            <input type="radio" name="sociedades" value="no">
-                            <span>No</span>
-                        </label>
-                    </p>
-                    <p class="radio-std">
-                        <label>
-                            <input type="radio" name="sociedades" checked value="si">
-                            <span>Si</span>
-                        </label>
-                    </p>
-                </div>
-                <div class="separador-linea"></div>
-                <div class="formulario-replica active">
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                            <label>RUT Sociedad</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                            <label>Razón Social</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras capital" type="text" required autocomplete="off">
-                            <label>%Capital</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                            <label>%Utilidad</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="select select--style">
-                            <div class="select__input">
-                                <select name="name">
-                                    <option value="null"></option>
-                                    <option value="01" selected>01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
-                                </select>
-                                <label class="label--active">Tipo de socio</label>
-                                <div class="select__line"></div>
-                                <i class="down"></i>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="ghost-form-one">
-                    <div class="formulario-replica hidden-block" form-code="1">
-                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="2">
-                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="3">
-                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="4">
-                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="5">
-                        <div class="erase-form del-soc"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-agregar">
-                    <button id="agregarSociedad" class="btn-std btn_plano_icono waves-effect waves-grey-2"><span>+</span>  Agregar sociedad</button>
-                </div>
-            </div>
-            <div class="box soy-aval-fiador">
-                <div class="header-part">
-                    <p>Soy Aval y/o fiador de un crédito</p>
-                    <p class="radio-std">
-                        <label>
-                            <input type="radio" name="avalfiador" value="no">
-                            <span>No</span>
-                        </label>
-                    </p>
-                    <p class="radio-std">
-                        <label>
-                            <input type="radio" name="avalfiador" checked value="si">
-                            <span>Si</span>
-                        </label>
-                    </p>
-                </div>
-                <div class="separador-linea"></div>
-                <div class="formulario-replica active">
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                            <label>RUT Sociedad</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                            <label>Razón Social</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras capital" type="text" required autocomplete="off">
-                            <label>%Capital</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="input-std">
-                            <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                            <label>%Utilidad</label>
-                            <span class="linea-input"></span>
-                        </div>
-                    </div>
-                    <div class="input-rep">
-                        <div class="select select--style">
-                            <div class="select__input">
-                                <select name="name">
-                                    <option value="null"></option>
-                                    <option value="01" selected>01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
-                                </select>
-                                <label class="label--active">Tipo de socio</label>
-                                <div class="select__line"></div>
-                                <i class="down"></i>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="ghost-form-two">
-                    <div class="formulario-replica hidden-block" form-code="1">
-                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="2">
-                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="3">
-                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="4">
-                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01" selected>01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="formulario-replica hidden-block" boolean-form="" form-code="5">
-                        <div class="erase-form"><a href="#!"><span class='srt srt-trash'></span> Eliminar</a></div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras rut-sociedad" type="text" required autocomplete="off">
-                                <label>RUT Sociedad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras razon-social" type="text" required autocomplete="off">
-                                <label>Razón Social</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras capital" type="text" required autocomplete="off">
-                                <label>%Capital</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="input-std">
-                                <input class="soloLetras utilidad" type="text" required autocomplete="off">
-                                <label>%Utilidad</label>
-                                <span class="linea-input"></span>
-                            </div>
-                        </div>
-                        <div class="input-rep">
-                            <div class="select select--style">
-                                <div class="select__input">
-                                    <select name="name">
-                                        <option value="null"></option>
-                                        <option value="01">01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                    </select>
-                                    <label class="label--active">Tipo de socio</label>
-                                    <div class="select__line"></div>
-                                    <i class="down"></i>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-agregar">
-                    <button id="agregarSociedad2" class="btn-std btn_plano_icono waves-effect waves-grey-2"><span>+</span>  Agregar sociedad</button>
-                </div>
-            </div>
         </div>
         <div class="box red-box declaracion-covid no-print">
             <a href="">
@@ -901,6 +270,7 @@
                 <label>
                     <input id="decCovid" type="checkbox" class="check-std">
                     <span>He leído todosos terminos y condiciones y declaro estar conforme.</span>
+                    <span class="error-span">Este campo es obligatorio</span>
                 </label>
             </p>
         </div>
@@ -913,6 +283,7 @@
                 <label>
                     <input id="manProrr" type="checkbox" class="check-std">
                     <span>He leído todosos terminos y condiciones y declaro estar conforme.</span>
+                    <span class="error-span">Este campo es obligatorio</span>
                 </label>
             </p>
         </div>
@@ -925,6 +296,7 @@
                 <label>
                     <input id="mandSusc" type="checkbox" class="check-std">
                     <span>He leído todosos terminos y condiciones y declaro estar conforme.</span>
+                    <span class="error-span">Este campo es obligatorio</span>
                 </label>
             </p>
         </div>
@@ -969,6 +341,7 @@
                     <p class="contador-text"><span>0</span>/200</p>
                 </div>
             </div>
+            <span class="error-span">Este campo es obligatorio</span>
         </div>
         <div class="box conocer-condiciones">
             <p>Para conocer las condiciones del Seguros que vas a contratar</p>
@@ -979,6 +352,7 @@
                 <label>
                     <input id="conCond" type="checkbox" class="check-std">
                     <span>He leído los terminos y condiciones de contrato</span>
+                    <span class="error-span">Este campo es obligatorio</span>
                 </label>
             </p>
         </div>
@@ -997,7 +371,7 @@
         <div class="box confirmar  no-print">
             <img src="img/clave.png" alt="">
             <div class="end-btn no-print">
-                <button href="#" id="end-btn" class="btn-std btn_primario waves-effect waves-grey disabled">CONTRATAR <span class="icon-right-side srt srt-arrow-right"></span></button>
+                <button href="#!" id="end-btn" class="btn-std btn_primario waves-effect waves-grey disabled">CONTRATAR <span class="icon-right-side srt srt-arrow-right"></span></button>
             </div>
         </div>
     </div>

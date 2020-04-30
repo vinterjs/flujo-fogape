@@ -366,6 +366,9 @@ strong{
 .preexistencias > .radio-std.last-ch{
     padding-top: 10px;
 }
+.preexistencias > span.error-span{
+    padding:15px;
+}
 .conocer-condiciones > p{
     font-size: 16px;
     padding: 15px;
@@ -400,6 +403,15 @@ strong{
     font-size: 22px;
     color: #EC0000;
     vertical-align: middle;
+}
+.error-span{
+    display: none;
+    padding-left: 35px;
+    font-size: 12px;
+    font-family:SantanderMicroTextW01-Rg;
+    font-weight: 444;
+    color: #EC0000;
+    padding-top: 5px;
 }
 @media (max-width:850px){
     .simulacion-fogape{
