@@ -1,0 +1,353 @@
+
+/*botones*/
+.icon-right-side {
+    margin-left: 5px;
+ }
+ .icon-left-side {
+    margin-right: 5px;
+ }
+ .btn-std{
+    font-family:SantanderTextW05-Bold;
+    margin: 10px 0;
+    height: 36px;
+    vertical-align: top;
+ }
+ @media (max-width: 768px) {
+  .btn-std{ 
+    height: auto; 
+    min-height: 36px; 
+ }
+}
+ .btn-std > span{
+    font-size: 20px;
+    vertical-align: middle
+ }
+ .btn_primario {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    background-color: #ec0000;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_primario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_primario:hover {
+   background-color: #B30000;
+ }
+ .btn_primario.disabled  {
+    background-color: #C2C2C2;
+    cursor: initial;
+ }
+ /*.btn_primario span {
+    min-width: 12px;
+ }*/
+ .btn_secundario {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 7px 22px 9px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+    box-shadow: inset 0px 0px 0px 1px #C2C2C2;
+ }
+ .btn_secundario:hover {
+   box-shadow: inset 0px 0px 0px 1px #ec0000;
+ }
+ @media (max-width: 768px) {
+    .btn_secundario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_secundario.disabled  {
+   color: #c2c2c2;
+   cursor: initial;
+ }
+ .btn_secundario.disabled:hover {
+    box-shadow: inset 0px 0px 0px 1px #C2C2C2;
+ }
+ .btn_plano {
+    font-size: 14px;
+    font-family:SantanderTextW05-Bold;
+    font-weight: bold;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_plano:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+ }
+ .btn_plano.disabled {
+   color: #c2c2c2;
+   cursor: initial;
+ }
+ .btn_plano.disabled:hover {
+    background-color: #fff;
+ }
+ .btn_plano_icono {
+    font-size: 14px;
+    font-family:SantanderTextW05-Regular;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano_icono {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_plano_icono.disabled {
+    color: #c2c2c2;
+    cursor: initial;
+ }
+ .btn_plano_secundario {
+    font-size: 14px;
+    font-family:SantanderTextW05-Regular;
+    font-weight: 400;
+    line-height: 20px;
+    color: #137E84;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano_secundario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_plano_secundario:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+ }
+ .btn_plano_secundario.disabled {
+   color: #c2c2c2;
+   cursor: initial;
+ }
+ .btn_plano_secundario.disabled:hover {
+    background-color: #fff;
+ }
+ .btn_plano_icono_secundario {
+    font-size: 14px;
+    font-family:SantanderTextW05-Regular;
+    font-weight: 400;
+    line-height: 20px;
+    color: #137E84;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano_icono_secundario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_plano_icono_secundario.disabled {
+    color: #c2c2c2;
+    cursor: initial;
+ }
+ .btn_volver {
+    font-size: 15px;
+    line-height: 24px;
+    display: inline-block;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    text-transform: none;
+    padding: 8px 0;
+    color: #444;
+    border-radius: 4px;
+ }
+ .btn_outline {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+    box-shadow: inset 0px 0px 0px 1px #ec0000;
+ }
+ @media (max-width: 768px) {
+    .btn_outline {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ .btn_outline:hover { 
+    background-color: #ec0000;
+    color: #fff;
+ }
+ .btn_outline span {
+    color: #ec0000;
+ }
+ .btn_outline:hover span {
+    color: #fff;
+ }
+ .btn_outline.disabled {
+    box-shadow: inset 0px 0px 0px 1px #C2C2C2;
+    color: #c2c2c2;
+    cursor: initial;
+ }
+ .btn_outline:hover.disabled { 
+    background-color: #fff;
+ }
+/*fin botones*/
+/* botones waves */
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -ms-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}  
+.waves-effect.waves-grey .waves-ripple {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.waves-effect.waves-grey-2 .waves-ripple {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+a.waves-effect .waves-ripple {
+    z-index: -1;
+}
+/* fin botones waves */

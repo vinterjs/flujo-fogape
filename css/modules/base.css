@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+[class*="srt-"],
+[class*=" str-"]{
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
