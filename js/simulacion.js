@@ -580,7 +580,7 @@ function estados(){
 
   if(!preex && !preex_text){
     $(".preexistencias").find(".error-span").css("display","block");
-    $('html, body').animate({scrollTop: $("#preexText").offset().top}, 1000);
+    //$('html, body').animate({scrollTop: $("#preexText").offset().top}, 1000);
   }else{
     $(".preexistencias").find(".error-span").css("display","none");
   }
@@ -591,12 +591,12 @@ function estados(){
     $("#conCond").parent().find(".error-span").css("display","none");
   }
 
-  if( !$("#email-end").hasClass("invalid valid") ){
+  if( !$("#email-end").hasClass("valid") && $("#email-end").val() ){
     $("#email-end").addClass("invalid");
     $('html, body').animate({scrollTop: $("#email-end").offset().top}, 1000);
   }
 
-  if( !$("#telefono-end").hasClass("invalid valid") ){
+  if( !$("#telefono-end").hasClass("valid") && $("#telefono-end").val() ){
     $("#telefono-end").addClass("invalid");
     $('html, body').animate({scrollTop: $("#telefono-end").offset().top}, 1000);
   }

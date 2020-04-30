@@ -200,6 +200,12 @@ strong{
     font-size: 14px;
     font-family: SantanderTextW05-Bold;
 }
+.cred-con-der > ul > li.titulos-li.sin-select > div.t4{
+    width: 54%;
+}
+.cred-con-der > ul > li.sin-select > div.t4{
+    width: 54%;
+}
 /*---------------------*/
 .cred-con-der > ul > li > div.t1{
     width: 29%;
