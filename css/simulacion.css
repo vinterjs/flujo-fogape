@@ -292,7 +292,7 @@ strong{
 .end-btn{
     text-align: center;
 }
-.hidden-block{
+.hidden-block, .hidden-block-dos{
     display: none;
 }
 .cb-st > label{
@@ -325,7 +325,7 @@ strong{
     float: right;
 }
 .formulario-replica{
-    padding: 15px 0;
+    padding: 30px 0;
     border-bottom: 1px solid #ddd;
 }
 .formulario-replica > .input-rep{
