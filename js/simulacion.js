@@ -604,44 +604,45 @@ $("#end-btn").click(function(){
   }
 });
 function estados(){
+
   if( !aut_banco ){
     $("#autorizoBanco").parent().find(".error-span").css("display","block");
-    $('html, body').animate({scrollTop: $("#autorizoBanco").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#autorizoBanco").offset().top}, 1);
   }else{
     $("#autorizoBanco").parent().find(".error-span").css("display","none");
   }
 
   if(!dec_covid){
     $("#decCovid").parent().find(".error-span").css("display","block");
-    $('html, body').animate({scrollTop: $("#decCovid").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#decCovid").offset().top}, 1);
   }else{
     $("#decCovid").parent().find(".error-span").css("display","none");
   }
 
   if(!man_prorr){
     $("#manProrr").parent().find(".error-span").css("display","block");
-    $('html, body').animate({scrollTop: $("#manProrr").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#manProrr").offset().top}, 1);
   }else{
     $("#manProrr").parent().find(".error-span").css("display","none");
   }
 
   if(!mand_susc){
     $("#mandSusc").parent().find(".error-span").css("display","block");
-    $('html, body').animate({scrollTop: $("#mandSusc").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#mandSusc").offset().top}, 1);
   }else{
     $("#mandSusc").parent().find(".error-span").css("display","none");
   }
 
   if(!preex){
     $(".preexistencias").find(".error-span").css("display","block");
-    $('html, body').animate({scrollTop: $(".preexistencias").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $(".preexistencias").offset().top}, 1);
   }else{
     $(".preexistencias").find(".error-span").css("display","none");
   }
 
   if(!preex && !preex_text){
     $(".preexistencias").find(".error-span").css("display","block");
-    //$('html, body').animate({scrollTop: $("#preexText").offset().top}, 1000);
+    //$('html, body').animate({scrollTop: $("#preexText").offset().top}, 1);
   }else{
     $(".preexistencias").find(".error-span").css("display","none");
   }
@@ -654,12 +655,12 @@ function estados(){
 
   if( !$("#email-end").hasClass("valid") && $("#email-end").val() ){
     $("#email-end").addClass("invalid");
-    $('html, body').animate({scrollTop: $("#email-end").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#email-end").offset().top}, 1);
   }
 
   if( !$("#telefono-end").hasClass("valid") && $("#telefono-end").val() ){
     $("#telefono-end").addClass("invalid");
-    $('html, body').animate({scrollTop: $("#telefono-end").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#telefono-end").offset().top}, 1);
   }
 
   if(!socied){
@@ -674,37 +675,91 @@ function estados(){
 function sociedadForm(){
   if( !$(".first-soc .rut").hasClass("valid") ){
     $(".first-soc .rut").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1);
   }
   if( !$(".first-soc .razon-social").hasClass("valid") ){
     $(".first-soc .razon-social").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1);
   }
   if( !$(".first-soc .capital").hasClass("valid") ){
     $(".first-soc .capital").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1);
   }
   if(!$(".first-soc .utilidad").hasClass("valid") ){
     $(".first-soc .utilidad").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".participacion-soc").offset().top}, 1);
   }
 }
 function avalForm(){
   if( !$(".first-aval .rut").hasClass("valid") ){
     $(".first-aval .rut").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1);
   }
   if( !$(".first-aval .razon-social").hasClass("valid") ){
     $(".first-aval .razon-social").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1);
   }
   if( !$(".first-aval .capital").hasClass("valid") ){
     $(".first-aval .capital").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1);
   }
   if(!$(".first-aval .utilidad").hasClass("valid") ){
     $(".first-aval .utilidad").addClass("invalid");
-    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1000);
+    $("html, body").animate({scrollTop: $(".soy-aval-fiador").offset().top}, 1);
   }
 }
 //soy-aval-fiador
+
+//input %
+/*document.querySelector('.percent').addEventListener('input', function(e) {
+  let int = e.target.value.slice(0, e.target.value.length - 1);
+
+  if (int.includes('%')) {
+    e.target.value = '%';
+  } else {
+    e.target.value = int + '%';
+    e.target.setSelectionRange(e.target.value.length - 1, e.target.value.length - 1);
+  }
+});*/
+$(".percent").keydown(function(e){
+  let int = e.target.value.slice(0, e.target.value.length - 1);
+  if (int.includes('%')) {
+    e.target.value = '%';
+  } else {
+    e.target.value = int + '%';
+    e.target.setSelectionRange(e.target.value.length - 1, e.target.value.length - 1);
+  }
+});
+
+function getInt(val) {
+  let v = parseFloat(val);
+  if (v % 1 === 0) {
+    return v;
+  } else {
+    let n = v.toString().split('.').join('');
+    return parseInt(n);
+  }
+}
+
+//no letras ni caracteres especiales
+$('.digDot').keydown(function(event){
+  var no_permitidas = ['!', '"', '$', '&', '/', '(', ')', '=', '?', '¿', '*', '¨', '^', '{', '}', 'Ç', 'ç', 'ª', 'º', 'Dead', '´', '+', '`', '_', '@', '#', '|', '¢', '∞', '¬', '÷', '”', '≠', '´'];
+  var no_permitidas_eventkey = [192, 222, 16, 220, 187];
+  var key;
+  if( !event.charCode ){
+      key = String.fromCharCode(event.which);
+  }else{
+      key = String.fromCharCode(event.charCode);
+  }
+  if( no_permitidas_eventkey.indexOf( event.keyCode ) !== -1 || no_permitidas.indexOf( event.key ) !== -1 ){
+      $(this).blur();
+  }
+  if( event.keyCode !== 8 && event.keyCode !== 9 && event.keyCode !== 37 && event.keyCode !== 39 ){
+      if ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105) || (event.keyCode >= 188 && event.keyCode <= 190 )){
+          return true;
+      }else{
+          event.preventDefault();
+          return false;
+      }
+  }
+});
