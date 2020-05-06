@@ -413,10 +413,11 @@ $("input[name='avalfiador']").click(function(){
   validar();
 });
 
-$(".first-soc .rut").focusout(function(){
+$(".first-soc .rut, .first-soc .capital, .first-soc .utilidad").focusout(function(){
   formSoc();
 });
-$(".first-soc .razon-social, .first-soc .capital, .first-soc .utilidad").focusout(function(){
+// $(".first-soc .razon-social, .first-soc .capital, .first-soc .utilidad").focusout(function(){
+$(".first-soc .razon-social").focusout(function(){
   if( $(this).val() ){
     $(this).addClass("valid");
     $(this).removeClass("invalid");
@@ -459,10 +460,11 @@ function formSoc(){
   validar();
 }
 
-$(".first-aval .rut").focusout(function(){
+$(".first-aval .rut, .first-aval .capital, .first-aval .utilidad").focusout(function(){
   formAval();
 });
-$(".first-aval .razon-social, .first-aval .capital, .first-aval .utilidad").focusout(function(){
+// $(".first-aval .razon-social, .first-aval .capital, .first-aval .utilidad").focusout(function(){
+$(".first-aval .razon-social").focusout(function(){
   if( $(this).val() ){
     $(this).addClass("valid");
     $(this).removeClass("invalid");
@@ -505,7 +507,6 @@ function formAval(){
   validar();
 
 }
-
 $("#telefono-end, #email-end").focusout(function(){
   var fono = $("#telefono-end");
   var mail = $("#email-end");
@@ -642,7 +643,6 @@ function estados(){
 
   if(!preex && !preex_text){
     $(".preexistencias").find(".error-span").css("display","block");
-    //$('html, body').animate({scrollTop: $("#preexText").offset().top}, 1);
   }else{
     $(".preexistencias").find(".error-span").css("display","none");
   }
@@ -721,25 +721,31 @@ function avalForm(){
     e.target.setSelectionRange(e.target.value.length - 1, e.target.value.length - 1);
   }
 });*/
-$(".percent").keydown(function(e){
-  let int = e.target.value.slice(0, e.target.value.length - 1);
-  if (int.includes('%')) {
-    e.target.value = '%';
-  } else {
-    e.target.value = int + '%';
-    e.target.setSelectionRange(e.target.value.length - 1, e.target.value.length - 1);
+$(".percent").on({
+  "keydown": function(e){
+    let int = e.target.value.slice(0, e.target.value.length - 1);
+    if (int.includes('%')) {
+      e.target.value = '%';
+    } else {
+      e.target.value = int + '%';
+      e.target.setSelectionRange(e.target.value.length - 1, e.target.value.length - 1);
+    }
+  },
+  "keyup": function(e){
+    let vl = parseInt(e.target.value.slice(0, e.target.value.length -1));
+    if(vl > 100){
+      $(this).removeClass("valid").addClass("invalid");
+      $(this).parent().find(".msj-input-error").text("El valor no debe superar el 100%");
+    }else{
+      $(this).removeClass("invalid").addClass("valid");
+      $(this).parent().find(".msj-input-error").text("");
+    }
+    if(isNaN(vl)){
+      $(this).removeClass("valid").addClass("invalid");
+    }
   }
 });
 
-function getInt(val) {
-  let v = parseFloat(val);
-  if (v % 1 === 0) {
-    return v;
-  } else {
-    let n = v.toString().split('.').join('');
-    return parseInt(n);
-  }
-}
 
 //no letras ni caracteres especiales
 $('.digDot').keydown(function(event){
